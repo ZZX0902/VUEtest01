@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue</title>
+    <script src="https://unpkg.com/vue"></script>
+
+</head>
+<body>
+<div id="myApp">
+    <h1>{{greet('night')}}</h1>
+    <h1>{{message}}</h1>
+    <h2>{{job}}</h2>
+    <p>{{key}}</p>
+    <a v-bind:href="baidu">百度</a><br>
+    <input type="text" v-bind:value="job">
+    <p v-html="baidutag"></p>
+
+</div>
+
+<script>
+    var myApp = new Vue({
+        el:'#myApp',
+        data: {
+                message: 'hello,vue',
+                job:'web',
+                key:123,
+              baidu:"https://www.baidu.com",
+            baidutag:"<a href='https://www.baidu.com'>baidutag</a>"
+        },
+        methods:{
+            greet:function (time) {
+                return "good"+time+" "+this.job+"!"
+            }
+        }
+    });
+</script>
+
+
+</body>
+</html>
+
+/*
+data:存储数据
+methods:存储方法
+*/

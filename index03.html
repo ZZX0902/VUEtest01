@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue"></script>
+
+</head>
+<body>
+<div id="vue-app">
+    <h1 >键盘</h1>
+    <label>姓名:</label>
+    //enter
+    <input type="text" v-on:keyup.enter="logName">
+    <label>年龄：</label>
+    //alt+enter
+    <input type="text" v-on:keyup.alt.enter="logAge">
+</div>
+<script>
+    var vueapp=new Vue({
+        el:"#vue-app",
+        data:{
+
+        },
+        methods:{
+            logName:function () {
+                alert("你正在输入名字");
+             },
+            logAge:function () {
+                alert("你正在输入年龄");
+            }
+
+        }
+
+
+
+    });
+
+</script>
+</body>
+</html>

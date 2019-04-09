@@ -1,0 +1,29 @@
+ #animal{
+    width:400px;
+    height: 200px;
+    margin: 0 auto;
+    background: url("demo1-images/imag1.png") center no-repeat;
+    background-size:80%  ;
+}
+ #animal.change{
+     background: url("demo1-images/imag2.png");
+ }
+ #animal-jd{
+     width:200px;
+     border:2px #000 solid;
+     margin: 0 auto 20px auto;
+
+
+ }
+ #animal-jd div{
+     height: 20px;
+     background: aqua;
+ }
+ #button{
+     width: 200px;
+     margin: 0 auto ;
+
+ }
+ #button button{
+     margin-left: 30px;
+ }
